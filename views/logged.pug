@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Logged in screen
+    style
+        include ../styles/logged.css
+  body
+    include ./header.pug
+    #greetings
+      h2
+        | Gratulacje. Zalogowałeś się!
+        | Kliknij poniższy przycisk, by się wylogować
+      form(action='http://localhost:3000/logout', method='GET')
+        input(type='submit', value='Wyloguj')
+    include ./footer.pug

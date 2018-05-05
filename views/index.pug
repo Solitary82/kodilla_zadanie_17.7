@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Login screen
+    style
+        include ../styles/styles.css
+  body
+    include ./header.pug
+    #description
+        h2 W tym miejscu możesz się zalogować do swojej poczty e-mail
+    #login
+      form(action='http://localhost:3000/auth/google', method='GET')
+        button.login Zaloguj
+    include ./footer.pug

@@ -1,0 +1,38 @@
+{
+  "name": "Zadanie_17.7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npm-run-all test:*",
+    "test:js": "eslint server.js",
+    "test:css1": "css-validator styles/header.css",
+    "test:css2": "css-validator styles/footer.css",
+    "test:css3": "css-validator styles/logged.css",
+    "test:css4": "css-validator styles/styles.css",
+    "fix": "eslint server.js --fix",
+    "gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "npm-run-all": "^4.1.2",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "css-validator": "^0.8.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornsilk;
+}
+
+#greetings {
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    margin-top: 20px;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+}
+
+input:hover {
+    cursor: pointer;
+    color: red;
+    background-color: white;
+}
